@@ -5,8 +5,8 @@ var botID = process.env.BOT_ID;
 
 function respond() {
   var request = JSON.parse(this.req.chunks[0]),
-      botRegex = /^\GYMSOCK$/, botReg = /^\gymsock$/,
-	  botR = /^\Gymsock$/, botReturn = /^\tendies$/;
+      botRegex = /^\boi$/, botReg = /^\BOI$/,
+	  botR = /^\Boi$/, botReturn = /^\tendies$/;
 	  
   if(request.text && botRegex.test(request.text)) {
     this.res.writeHead(200);
@@ -82,7 +82,7 @@ function postMessage() {
 		botResponse = "Maybe tonight, I will finally get the big sleep";
 		break;
 	case 7:
-		botResponse = "My bedroom smells like sweaty gym clothes. Phil's stuff is gone, I have no excuse.";
+		botResponse = "I keep having to buy new scrubs because I keep forgetting to bring them home";
 		break;
 	case 8:
 		botResponse = "Let me lather you up in my Donkey Sauce and take you to Flavortown";
@@ -100,19 +100,19 @@ function postMessage() {
 		botResponse = "I drink champagne through a tube";
 		break;
 	case 13:
-		botResponse = "I eat cereal with Natty Light instead of milk.";
+		botResponse = "I slurp up memes with a spoon";
 		break;
 	case 14:
 		botResponse = "https://www.youtube.com/watch?v=6DeBfvPiFN0";
 		break;
 	case 15:
-		botResponse = "My favorite sport is Hand-Egg.";
+		botResponse = "My favorite sport is Water Soccer.";
 		break;
 	case 16:
 		botResponse = "Booting in insecure mode.";
 		break;
 	case 17:
-		botResponse = "I wish I had a different little.";
+		botResponse = "I wish I had a different brother.";
 		break;
 	case 18:
 		botResponse = "I googled 'single player board games' and it directed me straight to the Prozac website.";
@@ -130,10 +130,10 @@ function postMessage() {
 		botResponse = "Cory in the House has no purpose, but it also has ALL of the purpose.";
 		break;
 	case 23:
-		botResponse = "Batt Markofske profitted off of the Skeleton War.";
+		botResponse = "Jacob Herbst profitted off the Great Meme War of October 2016";
 		break;
 	case 24:
-		botResponse = "Catt Moleman is my idol.";
+		botResponse = "Cameron Viehmann is my dad.";
 		break;
 	case 25:
 		botResponse = "'My entire life is like that feeling you get in your teeth when you floss for the first time in like, a week after forgetting' -@DadViehmann";
@@ -148,7 +148,7 @@ function postMessage() {
 		botResponse = "Choo Choo, All Aboard the Depression Train! Next stop, the bottom of a canyon!";
 		break;
 	case 29:
-		botResponse = "I love each and every member of TKE except for myself";
+		botResponse = "I love each and every member of this group except for myself";
 		break;
 	case 30:
 		botResponse = "Flintstones, Meet the Flintstones";
