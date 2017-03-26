@@ -9,28 +9,6 @@ function respond() {
 	botReturn = /^\MemeBoi$/;
     var req = request.text;
     var bigReq = req.toUpper();
-	  
-  if(request.text && botRegex.test(request.text)) {
-    this.res.writeHead(200);
-    postMessage();
-    this.res.end();
-  }
-  else {
-    console.log("don't care");
-    this.res.writeHead(200);
-    this.res.end();
-  }
-
-  if(request.text && botReg.test(request.text)) {
-	this.res.writeHead(200);
-	postMessage();
-    this.res.end();
-  }
-  else {
-    console.log("don't care");
-    this.res.writeHead(200);
-    this.res.end();
-  }
   
   if(bigReq && botR.test(bigReq)) {
 	this.res.writeHead(200);
