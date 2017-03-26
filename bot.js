@@ -40,17 +40,6 @@ function respond() {
     this.res.writeHead(200);
     this.res.end();
   }
-  
-  if(request.text && botReturn.test(request.text)) {
-	this.res.writeHead(200);
-	postMessage();
-    this.res.end();
-  }
-  else {
-    console.log("don't care");
-    this.res.writeHead(200);
-    this.res.end();
-  }
 }
 
 function postMessage() {
@@ -112,7 +101,7 @@ function postMessage() {
 		botResponse = "Booting in insecure mode.";
 		break;
 	case 17:
-		botResponse = "I wish I had a different little.";
+		botResponse = "I wish I had a different little brother.";
 		break;
 	case 18:
 		botResponse = "I googled 'single player board games' and it directed me straight to the Prozac website.";
