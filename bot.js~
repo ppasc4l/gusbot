@@ -5,8 +5,8 @@ var botID = process.env.BOT_ID;
 
 function respond() {
   var request = JSON.parse(this.req.chunks[0]),
-      botRegex = /^\GYMSOCK$/, botReg = /^\gymsock$/,
-	  botR = /^\Gymsock$/, botReturn = /^\tendies$/;
+      botRegex = /^\BOI/, botReg = /^\boi$/,
+	  botR = /^\Boi$/, botReturn = /^\tendies$/;
 	  
   if(request.text && botRegex.test(request.text)) {
     this.res.writeHead(200);
@@ -106,7 +106,7 @@ function postMessage() {
 		botResponse = "https://www.youtube.com/watch?v=6DeBfvPiFN0";
 		break;
 	case 15:
-		botResponse = "My favorite sport is Hand-Egg.";
+		botResponse = "My favorite sport is Water Horse Ball.";
 		break;
 	case 16:
 		botResponse = "Booting in insecure mode.";
@@ -133,7 +133,7 @@ function postMessage() {
 		botResponse = "Batt Markofske profitted off of the Skeleton War.";
 		break;
 	case 24:
-		botResponse = "Catt Moleman is my idol.";
+		botResponse = "Cameron Viehmann is my dad.";
 		break;
 	case 25:
 		botResponse = "'My entire life is like that feeling you get in your teeth when you floss for the first time in like, a week after forgetting' -@DadViehmann";
@@ -148,7 +148,7 @@ function postMessage() {
 		botResponse = "Choo Choo, All Aboard the Depression Train! Next stop, the bottom of a canyon!";
 		break;
 	case 29:
-		botResponse = "I love each and every member of TKE except for myself";
+		botResponse = "I'm a good catholic boy who don't need no man";
 		break;
 	case 30:
 		botResponse = "Flintstones, Meet the Flintstones";
@@ -159,6 +159,13 @@ function postMessage() {
         case 32: 
                 botResponse = "Me Me Big Boy";
                 break;
+        case 33:
+                botResponse = "https://www.youtube.com/watch?v=1Bix44C1EzY";
+                break;
+        case 34:
+      botResponse = "Oh.";
+      break;
+      
   }
 
   options = {
