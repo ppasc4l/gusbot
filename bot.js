@@ -70,7 +70,7 @@ function postMessage() {
 		botResponse = "Maybe tonight, I will finally get the big sleep";
 		break;
 	case 7:
-		botResponse = "My bedroom smells like sweaty gym clothes. Phil's stuff is gone, I have no excuse.";
+		botResponse = "I love meatballs more than I would ever love any woman.";
 		break;
 	case 8:
 		botResponse = "Let me lather you up in my Donkey Sauce and take you to Flavortown";
