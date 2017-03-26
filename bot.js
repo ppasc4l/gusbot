@@ -10,7 +10,7 @@ function respond() {
     var req = request.text;
     var bigReq = req.toUpper();
 	  
-  if(request.text && botRegex.test(bigReq)) {
+  if(request.text && botRegex.test(request.text)) {
     this.res.writeHead(200);
     postMessage();
     this.res.end();
@@ -32,7 +32,7 @@ function respond() {
     this.res.end();
   }
   
-  if(request.text && botR.test(request.text)) {
+  if(bigReq && botR.test(bigReq)) {
 	this.res.writeHead(200);
 	postMessage();
     this.res.end();
